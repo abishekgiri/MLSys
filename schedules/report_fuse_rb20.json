@@ -1,0 +1,42 @@
+[
+  {
+    "problem": "../MLSys_official/benchmarks/mlsys-2026-1.json",
+    "schedule": "schedules/mlsys-2026-1_fuse_rb20_schedule.json",
+    "subgraphs": 2,
+    "latency": 270143.99999999953,
+    "mode": "official",
+    "tag": "fuse_rb20"
+  },
+  {
+    "problem": "../MLSys_official/benchmarks/mlsys-2026-13.json",
+    "schedule": "schedules/mlsys-2026-13_fuse_rb20_schedule.json",
+    "subgraphs": 16,
+    "latency": 16292172.799999721,
+    "mode": "official",
+    "tag": "fuse_rb20"
+  },
+  {
+    "problem": "../MLSys_official/benchmarks/mlsys-2026-17.json",
+    "schedule": "schedules/mlsys-2026-17_fuse_rb20_schedule.json",
+    "subgraphs": 40,
+    "latency": 4968442.88,
+    "mode": "official",
+    "tag": "fuse_rb20"
+  },
+  {
+    "problem": "../MLSys_official/benchmarks/mlsys-2026-5.json",
+    "schedule": "schedules/mlsys-2026-5_fuse_rb20_schedule.json",
+    "subgraphs": 6,
+    "latency": 1256447.9999999988,
+    "mode": "official",
+    "tag": "fuse_rb20"
+  },
+  {
+    "problem": "../MLSys_official/benchmarks/mlsys-2026-9.json",
+    "schedule": "schedules/mlsys-2026-9_fuse_rb20_schedule.json",
+    "subgraphs": 1,
+    "latency": 23502499.83999977,
+    "mode": "official",
+    "tag": "fuse_rb20"
+  }
+]

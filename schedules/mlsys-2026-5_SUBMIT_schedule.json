@@ -1,0 +1,46 @@
+{
+  "subgraphs": [
+    [
+      13,
+      10,
+      11,
+      12,
+      14,
+      8,
+      5,
+      6,
+      7,
+      9,
+      3,
+      0,
+      1,
+      2,
+      4,
+      15,
+      16,
+      17,
+      18
+    ]
+  ],
+  "granularities": [
+    [
+      128,
+      32,
+      2
+    ]
+  ],
+  "tensors_to_retain": [
+    []
+  ],
+  "traversal_orders": [
+    null
+  ],
+  "subgraph_latencies": [
+    1194666.6666666653
+  ],
+  "connectivity_requested": "auto",
+  "connectivity_chosen": "loose",
+  "latency_strict": 1256447.9999999988,
+  "latency_loose": 1194666.6666666653,
+  "loose_components_split": 0
+}

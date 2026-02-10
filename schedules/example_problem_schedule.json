@@ -1,0 +1,28 @@
+{
+  "actions": [
+    {
+      "type": "load",
+      "tensor": "A"
+    },
+    {
+      "type": "load",
+      "tensor": "B"
+    },
+    {
+      "type": "compute",
+      "op": "op1"
+    },
+    {
+      "type": "load",
+      "tensor": "D"
+    },
+    {
+      "type": "compute",
+      "op": "op2"
+    },
+    {
+      "type": "store",
+      "tensor": "E"
+    }
+  ]
+}

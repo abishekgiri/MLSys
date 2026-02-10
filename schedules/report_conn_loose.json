@@ -1,0 +1,67 @@
+[
+  {
+    "problem": "../MLSys_official/benchmarks/mlsys-2026-1.json",
+    "schedule": "schedules/mlsys-2026-1_conn_loose_schedule.json",
+    "subgraphs": 1,
+    "latency": 243929.5999999995,
+    "retained_bytes_total": 0,
+    "retained_bytes_avg": 0.0,
+    "peak_resident_bytes": 0,
+    "load_saved_bytes": 0,
+    "store_saved_bytes": 0,
+    "mode": "official",
+    "tag": "conn_loose"
+  },
+  {
+    "problem": "../MLSys_official/benchmarks/mlsys-2026-13.json",
+    "schedule": "schedules/mlsys-2026-13_conn_loose_schedule.json",
+    "subgraphs": 1,
+    "latency": 16281827.199999733,
+    "retained_bytes_total": 0,
+    "retained_bytes_avg": 0.0,
+    "peak_resident_bytes": 0,
+    "load_saved_bytes": 0,
+    "store_saved_bytes": 0,
+    "mode": "official",
+    "tag": "conn_loose"
+  },
+  {
+    "problem": "../MLSys_official/benchmarks/mlsys-2026-17.json",
+    "schedule": "schedules/mlsys-2026-17_conn_loose_schedule.json",
+    "subgraphs": 1,
+    "latency": 4966400.0,
+    "retained_bytes_total": 0,
+    "retained_bytes_avg": 0.0,
+    "peak_resident_bytes": 0,
+    "load_saved_bytes": 0,
+    "store_saved_bytes": 0,
+    "mode": "official",
+    "tag": "conn_loose"
+  },
+  {
+    "problem": "../MLSys_official/benchmarks/mlsys-2026-5.json",
+    "schedule": "schedules/mlsys-2026-5_conn_loose_schedule.json",
+    "subgraphs": 1,
+    "latency": 1194666.6666666653,
+    "retained_bytes_total": 0,
+    "retained_bytes_avg": 0.0,
+    "peak_resident_bytes": 0,
+    "load_saved_bytes": 0,
+    "store_saved_bytes": 0,
+    "mode": "official",
+    "tag": "conn_loose"
+  },
+  {
+    "problem": "../MLSys_official/benchmarks/mlsys-2026-9.json",
+    "schedule": "schedules/mlsys-2026-9_conn_loose_schedule.json",
+    "subgraphs": 1,
+    "latency": 23502499.83999977,
+    "retained_bytes_total": 0,
+    "retained_bytes_avg": 0.0,
+    "peak_resident_bytes": 0,
+    "load_saved_bytes": 0,
+    "store_saved_bytes": 0,
+    "mode": "official",
+    "tag": "conn_loose"
+  }
+]

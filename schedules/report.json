@@ -1,0 +1,20 @@
+[
+  {
+    "problem": "problems/example_problem.json",
+    "schedule": "schedules/example_problem_schedule.json",
+    "actions": 6,
+    "loads": 3,
+    "stores": 1,
+    "computes": 2,
+    "latency": 45
+  },
+  {
+    "problem": "problems/simple_test.json",
+    "schedule": "schedules/simple_test_schedule.json",
+    "actions": 4,
+    "loads": 2,
+    "stores": 1,
+    "computes": 1,
+    "latency": 25
+  }
+]

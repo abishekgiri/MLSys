@@ -1,0 +1,10 @@
+[
+  {
+    "problem": "../MLSys_official/benchmarks/mlsys-2026-9.json",
+    "schedule": "schedules/mlsys-2026-9_official_v2_schedule.json",
+    "subgraphs": 32,
+    "latency": 48318382.07999927,
+    "mode": "official",
+    "tag": "official_v2"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "problem": "../MLSys_official/benchmarks/mlsys-2026-9.json",
+    "schedule": "schedules/mlsys-2026-9_debug_9_schedule.json",
+    "subgraphs": 1,
+    "latency": 23502499.83999977,
+    "mode": "official",
+    "tag": "debug_9"
+  }
+]

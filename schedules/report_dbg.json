@@ -1,0 +1,15 @@
+[
+  {
+    "problem": "/Users/abishekkumargiri/Desktop/sellable/MLSys_official/benchmarks/mlsys-2026-17.json",
+    "schedule": "schedules/mlsys-2026-17_dbg_schedule.json",
+    "subgraphs": 40,
+    "latency": 4968442.88,
+    "retained_bytes_total": 262144,
+    "retained_bytes_avg": 6553.6,
+    "peak_resident_bytes": 16384,
+    "load_saved_bytes": 131072,
+    "store_saved_bytes": 262144,
+    "mode": "official",
+    "tag": "dbg"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "problem": "../MLSys_official/benchmarks/mlsys-2026-13.json",
+    "schedule": "schedules/mlsys-2026-13_ret_on_schedule.json",
+    "subgraphs": 16,
+    "latency": 16304373.75999973,
+    "mode": "official",
+    "tag": "ret_on"
+  }
+]

@@ -1,0 +1,39 @@
+{
+    "scratchpad_capacity": 1024,
+    "tensors": {
+        "A": {
+            "size": 256
+        },
+        "B": {
+            "size": 256
+        },
+        "C": {
+            "size": 256
+        }
+    },
+    "operations": {
+        "op1": {
+            "inputs": [
+                "A",
+                "B"
+            ],
+            "outputs": [
+                "C"
+            ],
+            "compute_cost": 10
+        }
+    },
+    "edges": {
+        "A": [
+            "op1"
+        ],
+        "B": [
+            "op1"
+        ],
+        "op1": [
+            "C"
+        ]
+    },
+    "load_cost": 5,
+    "store_cost": 5
+}

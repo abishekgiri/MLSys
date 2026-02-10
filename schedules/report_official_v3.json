@@ -1,0 +1,42 @@
+[
+  {
+    "problem": "../MLSys_official/benchmarks/mlsys-2026-1.json",
+    "schedule": "schedules/mlsys-2026-1_official_v3_schedule.json",
+    "subgraphs": 3,
+    "latency": 367001.5999999993,
+    "mode": "official",
+    "tag": "official_v3"
+  },
+  {
+    "problem": "../MLSys_official/benchmarks/mlsys-2026-13.json",
+    "schedule": "schedules/mlsys-2026-13_official_v3_schedule.json",
+    "subgraphs": 50,
+    "latency": 22198026.23999962,
+    "mode": "official",
+    "tag": "official_v3"
+  },
+  {
+    "problem": "../MLSys_official/benchmarks/mlsys-2026-17.json",
+    "schedule": "schedules/mlsys-2026-17_official_v3_schedule.json",
+    "subgraphs": 73,
+    "latency": 4966400.0,
+    "mode": "official",
+    "tag": "official_v3"
+  },
+  {
+    "problem": "../MLSys_official/benchmarks/mlsys-2026-5.json",
+    "schedule": "schedules/mlsys-2026-5_official_v3_schedule.json",
+    "subgraphs": 10,
+    "latency": 1406839.4666666659,
+    "mode": "official",
+    "tag": "official_v3"
+  },
+  {
+    "problem": "../MLSys_official/benchmarks/mlsys-2026-9.json",
+    "schedule": "schedules/mlsys-2026-9_official_v3_schedule.json",
+    "subgraphs": 16,
+    "latency": 44962938.87999927,
+    "mode": "official",
+    "tag": "official_v3"
+  }
+]

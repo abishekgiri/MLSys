@@ -1,0 +1,10 @@
+[
+  {
+    "problem": "/Users/abishekkumargiri/Desktop/sellable/MLSys_official/benchmarks/mlsys-2026-9.json",
+    "schedule": "schedules/mlsys-2026-9_official_v3_schedule.json",
+    "subgraphs": 16,
+    "latency": 44962938.87999927,
+    "mode": "official",
+    "tag": "official_v3"
+  }
+]

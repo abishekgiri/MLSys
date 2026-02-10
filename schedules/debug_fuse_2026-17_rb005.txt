@@ -1,0 +1,102 @@
+TRY merge sg@0 + op85: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=82621.44 fused_lat=81600.00 boundary_saved: load=131072B store=131072B RESULT=ACCEPT reason=OK
+TRY merge sg@0 + op86: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=241600.00 fused_lat=241600.00 boundary_saved: load=262144B store=131072B RESULT=ACCEPT reason=OK
+TRY merge sg@0 + op83: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@3 + op87: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=167864.32 fused_lat=163200.00 boundary_saved: load=262144B store=262144B RESULT=ACCEPT reason=OK
+TRY merge sg@3 + op79: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@5 + op80: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=82621.44 fused_lat=81600.00 boundary_saved: load=131072B store=131072B RESULT=ACCEPT reason=OK
+TRY merge sg@5 + op81: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=241600.00 fused_lat=241600.00 boundary_saved: load=262144B store=131072B RESULT=ACCEPT reason=OK
+TRY merge sg@5 + op78: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@8 + op82: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=167864.32 fused_lat=163200.00 boundary_saved: load=262144B store=262144B RESULT=ACCEPT reason=OK
+TRY merge sg@8 + op74: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@10 + op75: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=82621.44 fused_lat=81600.00 boundary_saved: load=131072B store=131072B RESULT=ACCEPT reason=OK
+TRY merge sg@10 + op76: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=241600.00 fused_lat=241600.00 boundary_saved: load=262144B store=131072B RESULT=ACCEPT reason=OK
+TRY merge sg@10 + op73: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@13 + op77: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=167864.32 fused_lat=163200.00 boundary_saved: load=262144B store=262144B RESULT=ACCEPT reason=OK
+TRY merge sg@13 + op69: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@15 + op70: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=82621.44 fused_lat=81600.00 boundary_saved: load=131072B store=131072B RESULT=ACCEPT reason=OK
+TRY merge sg@15 + op71: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=241600.00 fused_lat=241600.00 boundary_saved: load=262144B store=131072B RESULT=ACCEPT reason=OK
+TRY merge sg@15 + op68: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@18 + op72: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=167864.32 fused_lat=163200.00 boundary_saved: load=262144B store=262144B RESULT=ACCEPT reason=OK
+TRY merge sg@18 + op64: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@20 + op65: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=82621.44 fused_lat=81600.00 boundary_saved: load=131072B store=131072B RESULT=ACCEPT reason=OK
+TRY merge sg@20 + op66: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=241600.00 fused_lat=241600.00 boundary_saved: load=262144B store=131072B RESULT=ACCEPT reason=OK
+TRY merge sg@20 + op63: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@23 + op67: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=167864.32 fused_lat=163200.00 boundary_saved: load=262144B store=262144B RESULT=ACCEPT reason=OK
+TRY merge sg@23 + op59: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@25 + op60: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=82621.44 fused_lat=81600.00 boundary_saved: load=131072B store=131072B RESULT=ACCEPT reason=OK
+TRY merge sg@25 + op61: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=241600.00 fused_lat=241600.00 boundary_saved: load=262144B store=131072B RESULT=ACCEPT reason=OK
+TRY merge sg@25 + op58: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@28 + op62: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=167864.32 fused_lat=163200.00 boundary_saved: load=262144B store=262144B RESULT=ACCEPT reason=OK
+TRY merge sg@28 + op54: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@30 + op55: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=82621.44 fused_lat=81600.00 boundary_saved: load=131072B store=131072B RESULT=ACCEPT reason=OK
+TRY merge sg@30 + op56: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=241600.00 fused_lat=241600.00 boundary_saved: load=262144B store=131072B RESULT=ACCEPT reason=OK
+TRY merge sg@30 + op53: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@33 + op57: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=167864.32 fused_lat=163200.00 boundary_saved: load=262144B store=262144B RESULT=ACCEPT reason=OK
+TRY merge sg@33 + op49: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@35 + op50: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=82621.44 fused_lat=81600.00 boundary_saved: load=131072B store=131072B RESULT=ACCEPT reason=OK
+TRY merge sg@35 + op51: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=241600.00 fused_lat=241600.00 boundary_saved: load=262144B store=131072B RESULT=ACCEPT reason=OK
+TRY merge sg@35 + op48: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@38 + op52: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=167864.32 fused_lat=163200.00 boundary_saved: load=262144B store=262144B RESULT=ACCEPT reason=OK
+TRY merge sg@38 + op44: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@40 + op43: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@41 + op42: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@42 + op45: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=20000.00 fused_lat=20000.00 boundary_saved: load=16384B store=16384B RESULT=ACCEPT reason=OK
+TRY merge sg@42 + op46: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=30000.00 fused_lat=30000.00 boundary_saved: load=16384B store=16384B RESULT=ACCEPT reason=OK
+TRY merge sg@42 + op47: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=190000.00 fused_lat=190000.00 boundary_saved: load=262144B store=16384B RESULT=ACCEPT reason=OK
+TRY merge sg@42 + op38: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@46 + op37: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@47 + op36: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@48 + op39: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=20000.00 fused_lat=20000.00 boundary_saved: load=16384B store=16384B RESULT=ACCEPT reason=OK
+TRY merge sg@48 + op40: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=30000.00 fused_lat=30000.00 boundary_saved: load=16384B store=16384B RESULT=ACCEPT reason=OK
+TRY merge sg@48 + op41: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=190000.00 fused_lat=190000.00 boundary_saved: load=262144B store=16384B RESULT=ACCEPT reason=OK
+TRY merge sg@48 + op32: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@52 + op31: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@53 + op30: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@54 + op33: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=20000.00 fused_lat=20000.00 boundary_saved: load=16384B store=16384B RESULT=ACCEPT reason=OK
+TRY merge sg@54 + op34: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=30000.00 fused_lat=30000.00 boundary_saved: load=16384B store=16384B RESULT=ACCEPT reason=OK
+TRY merge sg@54 + op35: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=190000.00 fused_lat=190000.00 boundary_saved: load=262144B store=16384B RESULT=ACCEPT reason=OK
+TRY merge sg@54 + op26: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@58 + op25: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@59 + op24: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@60 + op27: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=20000.00 fused_lat=20000.00 boundary_saved: load=16384B store=16384B RESULT=ACCEPT reason=OK
+TRY merge sg@60 + op28: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=30000.00 fused_lat=30000.00 boundary_saved: load=16384B store=16384B RESULT=ACCEPT reason=OK
+TRY merge sg@60 + op29: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=190000.00 fused_lat=190000.00 boundary_saved: load=262144B store=16384B RESULT=ACCEPT reason=OK
+TRY merge sg@60 + op20: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@64 + op19: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@65 + op18: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@66 + op21: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=20000.00 fused_lat=20000.00 boundary_saved: load=16384B store=16384B RESULT=ACCEPT reason=OK
+TRY merge sg@66 + op22: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=30000.00 fused_lat=30000.00 boundary_saved: load=16384B store=16384B RESULT=ACCEPT reason=OK
+TRY merge sg@66 + op23: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=190000.00 fused_lat=190000.00 boundary_saved: load=262144B store=16384B RESULT=ACCEPT reason=OK
+TRY merge sg@66 + op14: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@70 + op13: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@71 + op12: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@72 + op15: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=20000.00 fused_lat=20000.00 boundary_saved: load=16384B store=16384B RESULT=ACCEPT reason=OK
+TRY merge sg@72 + op16: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=30000.00 fused_lat=30000.00 boundary_saved: load=16384B store=16384B RESULT=ACCEPT reason=OK
+TRY merge sg@72 + op17: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=190000.00 fused_lat=190000.00 boundary_saved: load=262144B store=16384B RESULT=ACCEPT reason=OK
+TRY merge sg@72 + op8: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@76 + op7: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@77 + op6: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@78 + op9: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=20000.00 fused_lat=20000.00 boundary_saved: load=16384B store=16384B RESULT=ACCEPT reason=OK
+TRY merge sg@78 + op10: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=30000.00 fused_lat=30000.00 boundary_saved: load=16384B store=16384B RESULT=ACCEPT reason=OK
+TRY merge sg@78 + op11: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=190000.00 fused_lat=190000.00 boundary_saved: load=262144B store=16384B RESULT=ACCEPT reason=OK
+TRY merge sg@78 + op2: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@82 + op1: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@83 + op0: RESULT=REJECT reason=INVALID_FUSION:DEP_NOT_READY
+TRY merge sg@84 + op3: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=20000.00 fused_lat=20000.00 boundary_saved: load=16384B store=16384B RESULT=ACCEPT reason=OK
+TRY merge sg@84 + op4: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=30000.00 fused_lat=30000.00 boundary_saved: load=16384B store=16384B RESULT=ACCEPT reason=OK
+TRY merge sg@84 + op5: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=190000.00 fused_lat=190000.00 boundary_saved: load=262144B store=16384B RESULT=ACCEPT reason=OK
+TRY merge sg@84 + op88: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=197864.32 fused_lat=195242.88 boundary_saved: load=262144B store=262144B RESULT=ACCEPT reason=OK
+TRY merge sg@84 + op89: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=203107.20 fused_lat=198442.88 boundary_saved: load=262144B store=262144B RESULT=ACCEPT reason=OK
+TRY merge sg@84 + op90: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=206307.20 fused_lat=201642.88 boundary_saved: load=262144B store=262144B RESULT=ACCEPT reason=OK
+TRY merge sg@84 + op91: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=209507.20 fused_lat=204842.88 boundary_saved: load=262144B store=262144B RESULT=ACCEPT reason=OK
+TRY merge sg@84 + op92: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=212707.20 fused_lat=208042.88 boundary_saved: load=262144B store=262144B RESULT=ACCEPT reason=OK
+TRY merge sg@84 + op93: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=215907.20 fused_lat=211242.88 boundary_saved: load=262144B store=262144B RESULT=ACCEPT reason=OK
+TRY merge sg@84 + op94: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=219107.20 fused_lat=214442.88 boundary_saved: load=262144B store=262144B RESULT=ACCEPT reason=OK
+TRY merge sg@84 + op95: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=222307.20 fused_lat=217642.88 boundary_saved: load=262144B store=262144B RESULT=ACCEPT reason=OK
+TRY merge sg@84 + op96: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=225507.20 fused_lat=220842.88 boundary_saved: load=262144B store=262144B RESULT=ACCEPT reason=OK
+TRY merge sg@84 + op97: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=228707.20 fused_lat=224042.88 boundary_saved: load=262144B store=262144B RESULT=ACCEPT reason=OK
+TRY merge sg@84 + op98: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=231907.20 fused_lat=227242.88 boundary_saved: load=262144B store=262144B RESULT=ACCEPT reason=OK
+TRY merge sg@84 + op99: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=235107.20 fused_lat=230442.88 boundary_saved: load=262144B store=262144B RESULT=ACCEPT reason=OK
+TRY merge sg@84 + op100: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=238307.20 fused_lat=233642.88 boundary_saved: load=262144B store=262144B RESULT=ACCEPT reason=OK
+TRY merge sg@84 + op101: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=241507.20 fused_lat=236842.88 boundary_saved: load=262144B store=262144B RESULT=ACCEPT reason=OK
+TRY merge sg@84 + op102: compute_cap=475000B ws=49152B tile=(128,128,128) separate_lat=244707.20 fused_lat=240042.88 boundary_saved: load=262144B store=262144B RESULT=ACCEPT reason=OK
