@@ -1,0 +1,75 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1138 >>
+stream
+BT /F1 12 Tf 72 720 Td
+(MLSys 2026 Agent \(Track B\) Writeup) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Overview) Tj
+0 -14 Td
+(- The agent uses the Gemini API to choose scheduling parameters.) Tj
+0 -14 Td
+(- Parameters selected: scheduler \(baseline/fuse\), connectivity \(strict/loose/auto\), retain_budget.) Tj
+0 -14 Td
+(- The deterministic scheduler then generates a valid official schedule JSON.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Prompting) Tj
+0 -14 Td
+(- System prompt enforces JSON-only output with a fixed schema.) Tj
+0 -14 Td
+(- User prompt includes the full problem JSON.) Tj
+0 -14 Td
+(- Temperature is low \(0.2\) for reproducibility.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Architecture) Tj
+0 -14 Td
+(1\) Parse input JSON into internal problem representation.) Tj
+0 -14 Td
+(2\) Call Gemini to select scheduling parameters.) Tj
+0 -14 Td
+(3\) Run the scheduler with chosen parameters.) Tj
+0 -14 Td
+(4\) Emit strict official schedule JSON \(no extra keys\).) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Notes) Tj
+0 -14 Td
+(- The agent performs a single Gemini call per benchmark.) Tj
+0 -14 Td
+(- If the Gemini call fails, the agent falls back to safe defaults.) Tj
+0 -14 Td
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001431 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1501
+%%EOF

@@ -1,0 +1,11 @@
+Return ONLY one line of JSON (no newlines), exactly like this example:
+{"scheduler":"fuse","connectivity":"auto","retain_budget":0.05}
+
+Choose the best values while keeping the same keys.
+Allowed values:
+- scheduler: "baseline" or "fuse"
+- connectivity: "strict" or "loose" or "auto"
+- retain_budget: number between 0.0 and 0.2
+
+Problem JSON:
+{problem_json}

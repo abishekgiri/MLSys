@@ -1,10 +1,5 @@
-# MLSys 2026 Graph Scheduling Competition
+# MLSys 2026 Graph Scheduling Competition (Track B)
 # Python 3.8+ required
 
-# No external dependencies needed for core implementation
-# All functionality uses Python standard library
-
-# Optional: for development and testing
-# pytest>=7.0.0
-# black>=22.0.0
-# mypy>=0.950
+# Gemini API client
+google-generativeai>=0.3.2

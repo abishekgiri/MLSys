@@ -186,26 +186,46 @@ def compute_subgraph_latency(
             )
 
             k_tiles = math.ceil(K / k)
-            total_per_tile = 0.0
-            for step in range(k_tiles):
-                k_eff = min(k, K - step * k)
+            if k_tiles == 1:
+                k_eff = K
                 memory_in = 0.0
                 if problem.ops[matmul_idx].inputs[0] in boundary_inputs_all:
                     memory_in += (h * k_eff) / bandwidth
                 if problem.ops[matmul_idx].inputs[1] in boundary_inputs_all:
                     memory_in += (k_eff * w) / bandwidth
-
+                if extra_inputs:
+                    memory_in += (len(extra_inputs) * w * h) / bandwidth
                 memory_out = 0.0
+                if boundary_outputs_all:
+                    memory_out = (len(boundary_outputs_all) * w * h) / bandwidth
+                compute = problem.ops[matmul_idx].base_cost * (k_eff / K) + pointwise_cost
+                total_per_tile = max(compute, memory_in + memory_out)
+            else:
+                # All steps except the last use k_eff = k with no boundary outputs.
+                k_eff = k
+                memory_in = 0.0
+                if problem.ops[matmul_idx].inputs[0] in boundary_inputs_all:
+                    memory_in += (h * k_eff) / bandwidth
+                if problem.ops[matmul_idx].inputs[1] in boundary_inputs_all:
+                    memory_in += (k_eff * w) / bandwidth
                 compute = problem.ops[matmul_idx].base_cost * (k_eff / K)
+                pre_step = max(compute, memory_in)
 
-                if step == k_tiles - 1:
-                    if extra_inputs:
-                        memory_in += (len(extra_inputs) * w * h) / bandwidth
-                    if boundary_outputs_all:
-                        memory_out = (len(boundary_outputs_all) * w * h) / bandwidth
-                    compute += pointwise_cost
+                last_k = K - (k_tiles - 1) * k
+                memory_in_last = 0.0
+                if problem.ops[matmul_idx].inputs[0] in boundary_inputs_all:
+                    memory_in_last += (h * last_k) / bandwidth
+                if problem.ops[matmul_idx].inputs[1] in boundary_inputs_all:
+                    memory_in_last += (last_k * w) / bandwidth
+                if extra_inputs:
+                    memory_in_last += (len(extra_inputs) * w * h) / bandwidth
+                memory_out_last = 0.0
+                if boundary_outputs_all:
+                    memory_out_last = (len(boundary_outputs_all) * w * h) / bandwidth
+                compute_last = problem.ops[matmul_idx].base_cost * (last_k / K) + pointwise_cost
+                last_step = max(compute_last, memory_in_last + memory_out_last)
 
-                total_per_tile += max(compute, memory_in + memory_out)
+                total_per_tile = pre_step * (k_tiles - 1) + last_step
 
             return spatial_tiles * total_per_tile
 
@@ -241,19 +261,42 @@ def compute_subgraph_latency(
                 raise ValueError("Invalid K dimension")
             k = gran.depth
             k_tiles = math.ceil(K / k)
-            total_per_tile = 0.0
-            for step in range(k_tiles):
-                k_eff = min(k, K - step * k)
+            if k_tiles == 1:
+                k_eff = K
                 memory_in = 0.0
                 if op.inputs[0] in boundary_inputs:
                     memory_in += (h * k_eff) / bandwidth
                 if op.inputs[1] in boundary_inputs:
                     memory_in += (k_eff * w) / bandwidth
                 memory_out = 0.0
-                if step == k_tiles - 1 and boundary_outputs:
+                if boundary_outputs:
                     memory_out = (len(boundary_outputs) * w * h) / bandwidth
                 compute = op.base_cost * (k_eff / K)
-                total_per_tile += max(compute, memory_in + memory_out)
+                total_per_tile = max(compute, memory_in + memory_out)
+            else:
+                k_eff = k
+                memory_in = 0.0
+                if op.inputs[0] in boundary_inputs:
+                    memory_in += (h * k_eff) / bandwidth
+                if op.inputs[1] in boundary_inputs:
+                    memory_in += (k_eff * w) / bandwidth
+                compute = op.base_cost * (k_eff / K)
+                pre_step = max(compute, memory_in)
+
+                last_k = K - (k_tiles - 1) * k
+                memory_in_last = 0.0
+                if op.inputs[0] in boundary_inputs:
+                    memory_in_last += (h * last_k) / bandwidth
+                if op.inputs[1] in boundary_inputs:
+                    memory_in_last += (last_k * w) / bandwidth
+                memory_out_last = 0.0
+                if boundary_outputs:
+                    memory_out_last = (len(boundary_outputs) * w * h) / bandwidth
+                compute_last = op.base_cost * (last_k / K)
+                last_step = max(compute_last, memory_in_last + memory_out_last)
+
+                total_per_tile = pre_step * (k_tiles - 1) + last_step
+
             total_latency += spatial_tiles * total_per_tile
             continue
 

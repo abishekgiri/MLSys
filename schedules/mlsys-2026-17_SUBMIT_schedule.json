@@ -121,10 +121,5 @@
   ],
   "subgraph_latencies": [
     4966400.0
-  ],
-  "connectivity_requested": "auto",
-  "connectivity_chosen": "loose",
-  "latency_strict": 4968442.88,
-  "latency_loose": 4966400.0,
-  "loose_components_split": 0
+  ]
 }

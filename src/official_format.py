@@ -14,6 +14,7 @@ def write_official_schedule(
     tensors_to_retain: List[List[int]],
     traversal_orders: List[Optional[List[int]]],
     subgraph_latencies: List[float],
+    strict_output: bool = False,
     connectivity_requested: str = "strict",
     connectivity_chosen: str = "strict",
     latency_strict: Optional[float] = None,
@@ -28,11 +29,14 @@ def write_official_schedule(
         'tensors_to_retain': tensors_to_retain,
         'traversal_orders': traversal_orders,
         'subgraph_latencies': subgraph_latencies,
-        'connectivity_requested': connectivity_requested,
-        'connectivity_chosen': connectivity_chosen,
-        'latency_strict': latency_strict,
-        'latency_loose': latency_loose,
-        'loose_components_split': loose_components_split,
     }
+    if not strict_output:
+        output.update({
+            'connectivity_requested': connectivity_requested,
+            'connectivity_chosen': connectivity_chosen,
+            'latency_strict': latency_strict,
+            'latency_loose': latency_loose,
+            'loose_components_split': loose_components_split,
+        })
     with open(filepath, 'w') as f:
         json.dump(output, f, indent=2)

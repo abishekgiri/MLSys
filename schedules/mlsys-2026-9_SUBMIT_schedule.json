@@ -39,7 +39,7 @@
     [
       128,
       128,
-      4
+      512
     ]
   ],
   "tensors_to_retain": [
@@ -49,11 +49,6 @@
     null
   ],
   "subgraph_latencies": [
-    23502499.83999977
-  ],
-  "connectivity_requested": "auto",
-  "connectivity_chosen": "loose",
-  "latency_strict": 23502499.83999977,
-  "latency_loose": 23502499.83999977,
-  "loose_components_split": 0
+    23502499.84
+  ]
 }

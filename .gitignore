@@ -1,0 +1,8 @@
+.env
+GOOGLE_API_KEY=AIzaSyBlKPv84eTdlkySNR-ooJ7GaRBXGiNgyTQ
+GEMINI_MODEL=models/gemini-2.5-flash
+
+
+__pycache__/
+*.pyc
+

@@ -74,6 +74,11 @@ def main():
         help='Force official problem format'
     )
     parser.add_argument(
+        '--submission',
+        action='store_true',
+        help='Write strict official JSON (no extra metadata fields)'
+    )
+    parser.add_argument(
         '--retain-budget',
         type=float,
         default=0.0,
@@ -325,6 +330,7 @@ def main():
                 [sg.tensors_to_retain for sg in schedule.subgraphs],
                 [sg.traversal_order for sg in schedule.subgraphs],
                 [sg.subgraph_latency for sg in schedule.subgraphs],
+                strict_output=args.submission,
                 connectivity_requested=getattr(schedule, 'connectivity_requested', 'strict'),
                 connectivity_chosen=getattr(schedule, 'connectivity_chosen', 'strict'),
                 latency_strict=getattr(schedule, 'latency_strict', None),
